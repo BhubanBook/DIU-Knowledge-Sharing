@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.PickLocationMapActivity">
+
+    <FrameLayout
+        android:id="@+id/frameContainerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:onClick="back"
+        android:tint="@color/icon_color"
+        android:src="@drawable/ic_arrow_back_black_32dp"
+        android:layout_alignParentTop="true"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        map:cardElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <AutoCompleteTextView
+                android:layout_toLeftOf="@+id/searchBtnIV"
+                android:id="@+id/pickLocationATVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="Search location"
+                android:textSize="16sp"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:drawableTint="@color/icon_color"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:background="@color/white"
+                android:maxLines="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchBtnIV"
+                android:padding="10dp"
+                android:onClick="searchBtnTap"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/currentLocationImageViewID"
+        android:layout_width="40dp"
+        android:layout_height="65dp"
+        android:src="@drawable/map_pin"
+        android:paddingBottom="30dp"
+        android:tint="@color/colorPrimary"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/doneBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+        android:onClick="onDoneBtnClick"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLocationFAB"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:tint="@color/white"
+        app:fabSize="mini"
+        android:onClick="MyLocationBtnTap"
+        android:layout_marginBottom="78dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

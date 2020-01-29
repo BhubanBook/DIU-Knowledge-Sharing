@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseNameACTV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Select course name"
+        android:padding="10dp"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseCodeACTV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Course code"
+        android:enabled="false"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your expertise level"
+        android:layout_margin="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_weight=".33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/highLevelRB"
+            android:text="High"/>
+
+        <RadioButton
+            android:layout_weight=".33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mediumLevelRB"
+            android:checked="true"
+            android:text="Medium"/>
+
+        <RadioButton
+            android:layout_weight=".33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lowLevelRB"
+            android:text="Low"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:background="@drawable/all_side_border_button"
+        android:textColor="@color/white"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"/>
+
+</LinearLayout>

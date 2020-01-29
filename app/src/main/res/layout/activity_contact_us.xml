@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.ContactUsActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:onClick="back"
+        android:tint="@color/icon_color"
+        android:src="@drawable/ic_arrow_back_black_32dp"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".1"
+        android:src="@drawable/marker_icon"
+        android:scaleType="fitXY"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerInParent="true"
+        android:id="@+id/animation_view"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:onClick="callHelpline"
+        app:lottie_fileName="call_background.json"
+        android:tint="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:foregroundTint="@color/colorPrimary"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="20dp"
+        android:id="@+id/callBtnIV"
+        android:onClick="callHelpline"
+        android:src="@drawable/phone_icon"
+        android:layout_centerInParent="true"
+        android:elevation="3dp"/>
+
+</RelativeLayout>

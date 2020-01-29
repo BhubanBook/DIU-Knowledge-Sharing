@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/cross_button"
+            android:tint="@color/dark_red"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection !"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please check internet connect"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:id="@+id/itsOkBtnID"
+                android:layout_width="match_parent"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:background="@color/dark_ash"
+                android:layout_marginRight="2dp"
+                android:textAllCaps="false"
+                android:text="It's Okey"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+            <Button
+                android:id="@+id/settingsBtnID"
+                android:layout_width="match_parent"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:textAllCaps="false"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All the fields are required"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="(Please provide original information)"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deptACTV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Dept. name"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/batchNumberET"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Batch number"
+        android:singleLine="true"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollNumberET"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Roll number"
+        android:singleLine="true"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationNumberET"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/all_side_border_edittext"
+        android:hint="Registration number"
+        android:singleLine="true"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:background="@drawable/all_side_border_button"
+        android:textColor="@color/white"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"/>
+
+</LinearLayout>

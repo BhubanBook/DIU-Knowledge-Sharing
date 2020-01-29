@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/pickupTimePopUpTVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select leaving time"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_ash"></View>
+    <TimePicker
+        android:id="@+id/simpleTimePickerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:numbersInnerTextColor="@color/colorPrimary"
+        android:timePickerMode="spinner"/>
+
+<Button
+    android:id="@+id/cancelButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Done"
+    android:layout_gravity="center"
+    android:textSize="18sp"
+    android:textAllCaps="false"
+    android:background="@color/colorAccent"
+    android:textColor="#FFF"
+    android:visibility="visible" />
+
+
+
+
+
+</LinearLayout>

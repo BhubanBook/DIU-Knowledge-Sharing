@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DIU KSC</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity">My Activities</string>
+
+    <string name="demo_number">01xxxxxxxxx</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email (Optional)</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="number_hint">Enter mobile number</string>
+    <string name="login_message">Tap next to verify your account with your mobile number. An SMS will send to verify your number.</string>
+    <string name="next_text">Next</string>
+    <string name="verification_text">Enter verification code</string>
+    <string name="resend_text">Resend</string>
+    <string name="get_start_text">Get Start</string>
+    <string name="get_start">Tap continue to accept terms of service of Transport sharing</string>
+    <string name="tap_to_upload_image">Tap to upload profile picture</string>
+    <string name="name">Full Name</string>
+    <string name="contact">Contact</string>
+    <string name="save">Save</string>
+    <string name="title_more">More</string>
+
+    <string name="continue_text">Continue</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_courses">My Courses</string>
+    <string name="key">AIzaSyCoNGSLAEeAidl9uUKSwlP465m22b0K9ks</string>
+    <string name="map_api_key">AIzaSyCoNGSLAEeAidl9uUKSwlP465m22b0K9ks</string>
+    <string name="direction_api_key">AIzaSyBg8i0hgKB-G08vlQtuGyjlns1RfwzDzoE</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+</resources>

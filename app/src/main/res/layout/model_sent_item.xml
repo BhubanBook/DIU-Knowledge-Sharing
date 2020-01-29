@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/receiverProfileImageCIV"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/middleLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/receiverProfileImageCIV"
+                android:layout_toLeftOf="@+id/rightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/receiverNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Bobi Roy"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/receiverBatchDeptTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="37th batch, CSE Dept"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/statusLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="●"
+                        android:id="@+id/statusIconTV"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/statusTV"
+                        android:maxLines="2"
+                        android:text="Pending"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightLayout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/receiverRatingRB"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_gravity="center"
+                        android:stepSize=".1"
+                        android:clickable="false"
+                        android:numStars="5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(0)"
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/receiverRatingCountTV"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/callBtnIV"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:tint="@color/colorAccent"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="23dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_subject_black_24dp"
+                    android:id="@+id/requestedCourseTV"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/icon_color"
+                    android:layout_marginBottom="2dp"
+                    android:text="Java"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/messageBtnIV"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Request"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:background="@color/red"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:elevation="3dp"
+            android:textSize="16sp"
+            android:id="@+id/cancelBtnTV"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_ash"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

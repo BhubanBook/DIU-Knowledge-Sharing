@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription completed"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"
+        android:layout_gravity="center"
+        android:id="@+id/profileImageID"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        android:elevation="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textAlignment="center"
+        android:id="@+id/nameTV"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <RatingBar
+        android:id="@+id/ratingBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:stepSize="1"
+        android:numStars="5"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/commentId"
+        android:hint="Leave a comment (optional)"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/colorAccent"
+        android:textAllCaps="false"
+        android:id="@+id/submitBtnId"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:elevation="5dp"/>
+</LinearLayout>
